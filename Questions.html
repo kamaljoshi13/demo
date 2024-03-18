@@ -1,0 +1,717 @@
+<!-- find Maximum in array -->
+<!-- <script>
+  function maxVal(arr) {
+    let max = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > max) {
+        max = arr[i];
+      }
+    }
+    return max;
+  }
+</script> -->
+
+<!-- find Minimum in array -->
+<!-- <script>
+  function minVal(arr) {
+    let min = [0];
+    for (let i = 0; i < arr.length; i++) {
+      if (min > arr[i]) {
+        min = arr[i];
+      }
+    }
+    return min;
+  }
+</script> -->
+
+<!-- check if string is palindrome -->
+<!-- 
+<script>
+  let str1 = "level";
+  function pl(str) {
+    let newStr = str.split("").reverse().join("");
+    if (newStr == str) {
+      return true;
+    } else {
+      console.warn("not palindrome");
+    }
+  }
+
+</script> -->
+
+<!-- reverse a string without using reverse function -->
+
+<!-- <script>
+  let str1 = "kamal joshi";
+  console.warn(str1);
+  function revStr(str) {
+    let newStr = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+      newStr = newStr + str[i];
+    }
+    console.warn(newStr);
+  }
+</script> -->
+
+<!-- return even number from an array -->
+<!-- <script>
+  let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  function evnFlt(arr) {
+    return arr.filter((x) => {
+      return x % 2 === 0; // remainder 1 for odd numbers
+    });
+  }
+</script>
+ -->
+
+<!-- factorial -->
+<!-- <script>
+  let num = 5;
+  function fact(num) {
+    if (num === 0 || num === 1) {
+      return 1;
+    } else {
+      return (num = num * fact(num - 1));
+    }
+  }
+</script> -->
+
+<!-- check if num is prime or not -->
+
+<!-- <script>
+  function primeornot(n) {
+    if (n < 2) {
+      return `${n} is not a Prime Number`;
+    }
+    for (let i = 2; i < n; i++) {
+      if (n % i == 0) {
+        return `${n} is not a Prime Number`;
+      } else {
+        return `${n} is a Prime Number`;
+      }
+    }
+  }
+</script> -->
+
+<!-- find largest in nested array -->
+<!-- 
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script> -->
+
+<!-- fibonacci Sequence -->
+
+<!-- <script>
+  function fibo(num) {
+    let n1 = 0;
+    let n2 = 1;
+    let next;
+    for (let i = 1; i <= num; i++) {
+      console.log(n1);
+      next = n1 + n2;
+      n1 = n2;
+      n2 = next;
+    }
+  }
+</script> -->
+
+<!-- capitalize the first letter of string -->
+
+<!-- <script>
+  function capfirst(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+</script> -->
+
+<!-- merge two sorted arrays and sort them without using sort builtin -->
+<!-- <script>
+  arr1 = [1, 3, 5, 7, 9];
+  arr2 = [2, 4, 6, 8, 10];
+  arr3 = [];
+  arr3 = [...arr1, ...arr2];
+
+  for (let i = 0; i < arr3.length; i++) {
+    for (let j = 0; j < arr3.length; j++) {
+      if (arr3[j] > arr3[j + 1]) {
+        let temp = arr3[j];
+        arr3[j] = arr3[j + 1];
+        arr3[j + 1] = temp;
+      }
+    }
+  }
+  console.log(arr3);
+</script> -->
+
+<!-- check if two strings are anagrams or not -->
+
+<!-- <script>
+  function checkAnagram(str1, str2) {
+    return str1.split("").sort().join("") === str2.split("").sort().join("");
+  }
+</script> -->
+
+<!-- sum of all in an array -->
+<!-- <script>
+  let arr = [1, 2, 3, 4, 5];
+  function sumarr(arr) {
+    return arr.reduce((sum, num) => sum + num, 0);
+  }
+</script> -->
+
+<!-- count occurrences of each character on string -->
+<!-- <script>
+  function occurrences(str) {
+    let occ = {};
+    str.split("").forEach((element) => {
+      if (occ.hasOwnProperty(element) === false) {
+        occ[element] = 1;
+      } else {
+        occ[element]++;
+      }
+    });
+    console.warn(occ);
+  }
+</script> -->
+
+<!-- func that sorts array in ascending order -->
+
+<!-- <script>
+  function asSort(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < arr.length; j++) {
+        if (arr[j] > arr[j + 1]) {
+          let temp = arr[j];
+          arr[j] = arr[j + 1];
+          arr[j + 1] = temp;
+        }
+      }
+    }
+    console.warn(arr);
+  } -->
+<!-- </script> -->
+
+<!-- func that sorts array in descending order -->
+<!-- <script>
+  function arrDec(arr) {
+    for (let i = arr.length; i > 0; i--) {
+      for (let j = arr.length; j > 0; j--) {
+        if (arr[j] > arr[j - 1]) {
+          let temp = arr[j];
+          arr[j] = arr[j - 1];
+          arr[j - 1] = temp;
+        }
+      }
+    }
+    console.warn(arr);
+  }
+</script> -->
+
+<!-- function that reverse order of words in sentence -->
+<!-- <script>
+  function revWord(str) {
+    let newStr = str.split(" ");
+    console.log(newStr);
+    for (let i = 0; i < newStr.length; i++) {
+      newStr[i] = newStr[i].split("").reverse().join("");
+    }
+    console.log(newStr);
+  }
+</script> -->
+
+<!-- function that check if string is palindrome ignoring whitespace and punctuation -->
+<script></script>
+<!-- largest difference between two numbers in array of Numbers-->
+
+<!-- <script>
+  let arr = [1, 2, 3, 4, 5];
+  function largestDiff(arr) {
+    let maxDiff = arr[1] - arr[0];
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = i + 1; j < arr.length; j++) {
+        if (arr[j] - arr[i] > maxDiff) {
+          maxDiff = arr[j] - arr[i];
+        }
+      }
+    }
+    return maxDiff;
+  }
+  console.log(largestDiff(arr));
+</script> -->
+
+<!-- function removes duplicates keeping only unique elements -->
+
+<!-- <script>
+  let arr = [1, 2, 2, 2, 3, 3, 44, 44, 4, 5, 55, 5];
+  function removeDuplicate(arr) {
+    let newArr = [...new Set(arr)];
+    let secLarge = arr[1];
+    console.log(newArr);
+  }
+  removeDuplicate(arr);
+</script> -->
+
+<!-- function that returns flattens array -->
+<!-- 
+<script>
+  let arr = [[1], 2, [3, 4], 5];
+
+  function flattenArr(arr) {
+    return arr.flat();
+  }
+
+  console.log(flattenArr(arr));
+</script> -->
+
+<!-- find n smallest in array -->
+<!-- <script>
+  let arr = [15, 1, 654, 32, 54, 49, 1, 7, 64, 665, 6, 26, 15, 8];
+  let nth = 5;
+  function nthMinimum(nth) {
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < arr.length; j++) {
+        if (arr[j] > arr[j + 1]) {
+          let temp = arr[j];
+          arr[j] = arr[j + 1];
+          arr[j + 1] = temp;
+        }
+      }
+    }
+
+    arr = [...new Set(arr)];
+    console.log(arr);
+    console.log(`${nth} minimum is ${arr[nth - 1]}`);
+  }
+  nthMinimum(nth);
+</script> -->
+
+<!-- function to find n largest in array -->
+<!-- <script>
+  let arr = [15, 1, 654, 32, 54, 49, 1, 7, 64, 665, 6, 26, 15, 8];
+  let nth = 2;
+  function nthMaximum(nth) {
+    for (let i = arr.length; i > 0; i--) {
+      for (let j = arr.length; j > 0; j--) {
+        if (arr[j] > arr[j - 1]) {
+          let temp = arr[j];
+          arr[j] = arr[j - 1];
+          arr[j - 1] = temp;
+        }
+      }
+    }
+    arr = [...new Set(arr)];
+    console.log(arr);
+    console.log(`${nth}nd maximum is ${arr[nth - 1]}`);
+  }
+  nthMaximum(2);
+  nthMaximum(3);
+</script> -->
+
+<!-- function to calculate average of array of numbers -->
+<!-- <script>
+  let arr = [1, 2, 3, 4, 5];
+  function averageArr(arr) {
+    let sum = arr.reduce((s, x) => s + x);
+    return sum / arr.length;
+  }
+  console.log(averageArr(arr));
+</script> -->
+
+<!-- function to sort array of strings into alphabetical order -->
+
+<script></script>
+
+<!-- DSA - Insert element in array -->
+
+<!-- <script>
+  let arr = [1, 2, 3, 4, 6];
+  console.warn(arr);
+  function pushArr(position, value) {
+    for (let i = arr.length - 1; i >= 0; i--) {
+      if (i >= position) {
+        arr[i + 1] = arr[i];
+      }
+      if (i == position) {
+        arr[i] = value;
+      }
+    }
+    console.warn(arr);
+  }
+</script> -->
+
+<!-- DSA - Insert element in array -->
+
+<!-- <script>
+  let arr = [1, 2, 3, 54, 6, 65, 9, 4, 62, 3, 589, 546];
+  console.warn(arr);
+  function popArr(position) {
+    for (let i = 0; i < arr.length; i++) {
+      if (i >= position) {
+        arr[i] = arr[i + 1];
+      }
+    }
+    arr.length--;
+    console.warn(arr);
+  }
+</script> -->
+
+<!-- DSA - find element in array -->
+
+<!-- <script>
+  let arr = [1, 2, 3, 4, 5, 2, 6, 4];
+  console.warn(arr);
+
+  function find(value) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === value) {
+        console.warn(`${value} is at Index ${i}`);
+      } else {
+        console.warn(`not found`);
+        break;
+      }
+    }
+  }
+</script> -->
+
+<!-- DSA - Merge Two Array Manually -->
+
+<!-- <script>
+  let arr1 = [1, 3, 5, 7, 9];
+  let arr2 = [0, 2, 4, 6, 8];
+
+  function mergeArrays(arr1, arr2) {
+    let arr3 = [];
+    for (let i = 0; i < arr1.length; i++) {
+      arr3[i] = arr1[i];
+    }
+    console.warn(arr3);
+    for (let i = 0; i < arr2.length; i++) {
+      arr3[arr1.length + i] = arr2[i];
+    }
+    console.warn(arr3);
+  }
+</script> -->
+
+<!-- DSA - merge and sort using while loop -->
+
+<!-- <script>
+  let arr1 = [1, 3, 5, 7, 9];
+  let arr2 = [2, 4, 6, 8];
+  let arr3 = [];
+
+  function mergeArrWhile(arr1, arr2) {
+    let d1 = 0,
+      d2 = 0,
+      d3 = 0;
+    while (d1 < arr1.length && d2 < arr2.length) {
+      if (arr1[d1] < arr2[d2]) {
+        arr3[d3] = arr1[d1];
+        d3++;
+        d1++;
+      } else {
+        arr3[d3] = arr2[d2];
+        d3++;
+        d2++;
+      }
+    }
+
+    while (d1 < arr1.length) {
+      arr3[d3] = arr1[d1];
+      d3++;
+      d1++;
+    }
+    console.warn(arr3);
+  }
+  mergeArrWhile(arr1, arr2);
+</script> -->
+
+<!-- DSA - Add and Remove elements in Stack -->
+
+<!-- <script>
+  let stack = [];
+  let curr = stack.length;
+
+  function enqueue(val) {
+    stack[curr] = val;
+    curr++;
+    console.warn(stack);
+  }
+  function dequeue() {
+    curr--;
+    stack.length = curr;
+    console.warn(stack);
+  }
+</script> -->
+
+<!-- find three largest in array -->
+
+<!-- <script>
+  function Print3largest(arr) {
+    let first, second, third;
+    if (arr.length < 3) {
+      console.warn("INVALID INPUT");
+    }
+    first = second = third = Number.MIN_VALUE;
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > first) {
+        third = second;
+        second = first;
+        first = arr[i];
+      } else if (arr[i] > second) {
+        third = second;
+        second = arr[i];
+      } else if (arr[i] > third) {
+        third = arr[i];
+      }
+    }
+    console.log(` three largest are ${first} ${second} ${third}`);
+  }
+</script> -->
+
+<!-- merge two array in a single array alternating both -->
+
+<!-- <script>
+  let arr1 = [1, 3, 5, 9];
+  let arr2 = [2, 4, 6, 8];
+  let arr3 = [];
+  function mergeAlternate(arr1, arr2) {
+    if (arr1.length == arr2.length) {
+      for (let i = 0; i < arr1.length; i++) {
+        arr3.push(arr1[i], arr2[i]);
+      }
+    }
+    console.warn(arr3);
+  }
+  mergeAlternate(arr1, arr2);
+</script> -->
+
+<!-- Move all zeroes to End of array -->
+
+<!-- <script>
+  let arr = [1, 0, 5, 0, 4, 0, 0, 6, 0, 5, 0, 8, 7, 6];
+  let count = 0;
+  function shiftZero(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] != 0) {
+        arr[count] = arr[i];
+        count++;
+      }
+    }
+    while (count < arr.length) {
+      arr[count] = 0;
+      count++;
+    }
+    console.warn(arr);
+  }
+  shiftZero(arr);
+</script> -->
+
+<!-- selection sort - Ascending Order-->
+
+<!-- <script>
+  let arr = [55, 44, 6, 4, 9954, 7, 8, 312, 5, 62, 0, 2, 1];
+  let minId;
+  function selectionSort(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      minId = i;
+      for (let j = i + 1; j < arr.length; j++) {
+        if (arr[j] > arr[minId]) {
+          minId = j;
+        }
+        let temp = arr[i];
+        arr[i] = arr[minId];
+        arr[minId] = temp;
+      }
+    }
+    console.warn(arr);
+  }
+
+  selectionSort(arr);
+</script> -->
+
+<!-- selection sort - Descending Order-->
+<!-- <script>
+  let arr = [55, 44, 6, 4, 9954, 7, 8, 312, 5, 62, 0, 2, 1];
+  let minId;
+  function selectionSort(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      minId = i;
+      for (let j = i + 1; j < arr.length; j++) {
+        if (arr[j] > arr[minId]) {
+          minId = j;
+        }
+        let temp = arr[i];
+        arr[i] = arr[minId];
+        arr[minId] = temp;
+      }
+    }
+    console.warn(arr);
+  }
+
+  selectionSort(arr);
+</script> -->
+
+<!-- Insertion Sort -->
+
+<!-- <script>
+  let arr = [12, 11, 13, 5, 6];
+  function insertionSort(arr) {
+    let current;
+    for (let i = 1; i < arr.length; i++) {
+      current = arr[i];
+      j = i - 1;
+      while (j >= 0 && current < arr[j]) {
+        arr[j + 1] = arr[j];
+        j = j - 1;
+      }
+      arr[j + 1] = current;
+    }
+    console.warn(arr);
+  }
+  insertionSort(arr);
+</script> -->
+
+<!-- Check anagrams -->
+<!-- <script>
+  let str1 = "hello";
+  let str2 = "olleh";
+  let strObj = {};
+  function checkAnagram(str1, str2) {
+    if (str1.length != str2.length) {
+      return false;
+    }
+
+    for (let ch of str1) {
+      strObj[ch] = (strObj[ch] || 0) + 1;
+    }
+    for (let a of str2) {
+      if (!strObj[a]) {
+        return false;
+      }
+      strObj[a]--;
+    }
+    return true;
+  }
+
+  checkAnagram(str1, str2);
+</script> -->
+
+<!-- print Maximum Occuring -->
+<!-- 
+<script>
+  let str = "hello";
+  let strObj = {};
+
+  function Occ(str) {
+    for (let ch of str) {
+      strObj[ch] = (strObj[ch] || 0) + 1;
+    }
+    console.warn(strObj);
+  }
+</script> -->
+
+<!-- Print the Table of given number -->
+
+<!-- <script>
+  function printTable(num) {
+    for (let i = 0; i <= 10; i++) {
+      console.log(`${num} * ${i} = ${num * i}`);
+    }
+  }
+</script> -->
+
+<!-- <script>
+  let arr = [5, 45, 56, 8465, 18, 3];
+
+  function foo(val, pos) {
+    for (let i = data.length - 1; i >= 0; i--) {
+      if (i >= pos) {
+        arr[i + 1] = arr[i];
+        if (i == pos) {
+          arr[i] = val;
+        }
+      }
+    }
+    console.log(arr);
+  }
+
+  foo(56, 2);
+</script> -->
+
+<!-- <script>
+  let arr = [12, 11, 13, 5, 6];
+  function selectionSort(data) {
+    let minId;
+    for (let i = 0; i < data.length; i++) {
+      minId = i;
+      for (let j = i + 1; j < data.length; j++) {
+        if (data[j] < data[minId]) {
+          minId = j;
+        }
+      }
+
+      let temp = data[minId];
+      data[minId] = data[i];
+      data[i] = temp;
+    }
+  }
+
+  selectionSort(arr);
+  console.log(arr);
+</script> -->
+<!-- 
+<script>
+  let arr = [12, 11, 5, 6, 2];
+  function sm(arr) {
+    let i, current, j;
+    for (let i = 1; i < arr.length; i++) {
+      current = arr[i];
+      j = j - 1;
+      while (j >= 0 && arr[j] > current) {
+        arr[j + 1] = arr[j];
+        j = j - 1;
+      }
+      arr[j + 1] = current;
+    }
+  }
+  sm(arr);
+
+  console.log(arr);
+</script> -->
+
+<!-- Binary Search -->
+
+<script>
+  let data = [1, 10, 20, 30, 55, 66, 78, 910];
+  let position;
+  let start = 0;
+  let end = data.length - 1;
+  let find = 55;
+
+  function binarySearch(data, start, end) {
+    let mid = Math.floor((start + end) / 2);
+
+    if (data[mid] == find) {
+      position = mid;
+      return true;
+    } else if (data[mid] > find) {
+      binarySearch(data, start, mid - 1);
+    } else {
+      binarySearch(data, mid + 1, end);
+    }
+  }
+  binarySearch(data, start, end);
+  console.log(position);
+</script>
